@@ -1,5 +1,5 @@
 import React from "react";
-import { Layout, Menu, Breadcrumb } from "antd";
+import { Layout, Menu, Breadcrumb, Row, Col } from "antd";
 import {
   DesktopOutlined,
   PieChartOutlined,
@@ -8,6 +8,7 @@ import {
   UserOutlined,
 } from "@ant-design/icons";
 import { Header } from "./components/Header";
+import Table from "./components/Table";
 
 const { Content, Footer, Sider } = Layout;
 const { SubMenu } = Menu;
@@ -56,12 +57,11 @@ class App extends React.Component {
               <Breadcrumb.Item>User</Breadcrumb.Item>
               <Breadcrumb.Item>Bill</Breadcrumb.Item>
             </Breadcrumb>
-            <div
-              className="site-layout-background"
-              style={{ padding: 24, minHeight: 360 }}
-            >
-              Bill is a cat.
-            </div>
+            <Row>
+              <Col xs={24} md={{ span: 12, offset: 6 }}>
+                <Table />
+              </Col>
+            </Row>
           </Content>
           <Footer style={{ textAlign: "center" }}>
             Ant Design ©2018 Created by Ant UED

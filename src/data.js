@@ -1,4 +1,4 @@
-export const pocemons = [
+export const pokemons = [
   {
     id: "1",
     number: "001",
@@ -238,7 +238,7 @@ export const pocemons = [
     number: "027",
     name: "Sandshrew",
     classfication: "ice",
-    fleeRate: 07,
+    fleeRate: 0.7,
     image: "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/027.png",
   },
 
@@ -265,7 +265,7 @@ export const pocemons = [
     number: "030",
     name: "Nidorina",
     classfication: "poison",
-    fleeRate: 08,
+    fleeRate: 0.8,
     image: "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/030.png",
   },
 ];
