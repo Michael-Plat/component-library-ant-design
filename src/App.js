@@ -1,5 +1,5 @@
 import React from "react";
-import { Layout, Menu, Breadcrumb, Row, Col } from "antd";
+import { Layout, Menu, Breadcrumb, Row, Col, Divider } from "antd";
 import {
   DesktopOutlined,
   PieChartOutlined,
@@ -9,6 +9,8 @@ import {
 } from "@ant-design/icons";
 import { Header } from "./components/Header";
 import Table from "./components/Table";
+import { AppSizeButton } from "./components/AppButton";
+import { MultipleButton } from "./components/MultipleButtons";
 
 const { Content, Footer, Sider } = Layout;
 const { SubMenu } = Menu;
@@ -60,6 +62,12 @@ class App extends React.Component {
             <Row>
               <Col xs={24} md={{ span: 12, offset: 6 }}>
                 <Table />
+                <AppSizeButton />
+                <br />
+                <Divider />
+                <div>
+                  <MultipleButton />
+                </div>
               </Col>
             </Row>
           </Content>
